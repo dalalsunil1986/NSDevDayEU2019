@@ -1,0 +1,13 @@
+.DS_Store
+*.log
+**/*.js
+*.js.map
+.nsbuildinfo
+*.gradle
+hooks
+node_modules
+report
+platforms
+app/tns_modules
+!webpack.config.js
+DKCarouselView-master.zip
