@@ -1,21 +1,28 @@
-<ActionBar class="action-bar">
-    <!-- 
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
-    <!-- 
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
-        ios.position="left">
-    </ActionItem>
-    <Label class="action-bar-title" text="Home"></Label>
+<ActionBar class="action-bar action-bar-speakers">
+  <!-- 
+      Use the NavigationButton as a side-drawer button in Android
+      because ActionItems are shown on the right side of the ActionBar
+      -->
+  <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+  <!-- 
+      Use the ActionItem for IOS with position set to left. Using the
+      NavigationButton as a side-drawer button in iOS is not possible,
+      because its function is to always navigate back in the application.
+      -->
+  <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left"> </ActionItem>
+  <Label class="action-bar-title" text="NativeScript Developer Day"></Label>
 </ActionBar>
 
-<GridLayout class="page page-content">
-    <Label class="page-icon fa" text="&#xf015;"></Label>
-    <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
+<GridLayout
+  class="page page-content"
+  style="background-image: url('~/images/amsterdam.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;"
+>
+  <StackLayout style="padding: 20; background-color: rgba(46, 40, 65, 0.9);">
+    <SVGImage src="~/images/ns-dev-day-logo.svg" class="logo"></SVGImage>
+    <Label text="11-12 April 2019, Amsterdam" textWrap="true" class="home-date"></Label>
+    <Label text="Schedule" textWrap="true" class="home-link yellow"></Label>
+    <Label text="Speakers" textWrap="true" (tap)="onNavItemTap('/speakers')" class="home-link speakers"></Label>
+    <Label text="Sponsors" textWrap="true" class="home-link blue"></Label>
+    <Label text="Location" textWrap="true" class="home-link green"></Label>
+  </StackLayout>
 </GridLayout>
