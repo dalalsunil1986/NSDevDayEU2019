@@ -1,0 +1,40 @@
+@import "../../app-variables";
+
+.page {
+  background-color: $blue;
+}
+
+.header {
+  color: $white;
+}
+
+.text-header {
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", "Oswald-Bold";
+  font-size: 30;
+}
+
+.text-italic {
+  font-style: italic;
+  text-align: center;
+  font-size: 20;
+}
+
+.carousel-content {
+  .bio {
+    padding: 10 20;
+  }
+}
+
+.carousel-image {
+  border-radius: 30;
+  border-width: 10;
+  border-color: $white;
+}
+
+.carousel-imagewrapper {
+  height: 150;
+  width: 150;
+}

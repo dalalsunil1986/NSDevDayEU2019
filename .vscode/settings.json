@@ -6,7 +6,8 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/.DS_Store": true,
-    "app/**/*.css": true,
+    "src/**/*.css": { "when": "$(basename).scss" },
+    "src/app/**/*.css": { "when": "$(basename).scss" },
     "src/app/**/*.js": { "when": "$(basename).ts" },
     "src/app/**/*.js.map": true
   },
