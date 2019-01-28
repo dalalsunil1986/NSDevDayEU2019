@@ -1,0 +1,123 @@
+{
+  "speakers": [
+    {
+      "id": 1,
+      "name": "Tiago Reis Alves",
+      "title": "Mobile Developer at irc.com",
+      "bio": "In his decade as a developer, Tiago did a bit of everything until finally landing in the soft arms of Vue.js. He is very excited with the possibility of using Vue with NativeScript and so he has been helping with the nativescript-vue community effort for some time.",
+      "image": "tiago-reis-alves"
+    },
+    {
+      "id": 2,
+      "name": "Bart van den Burg",
+      "title": "Lead Developer at Neocles",
+      "bio": "Five years ago he crossed paths with Neocles, where he started as a Frontend developer using AngularJS. In the meantime he has grown out to be the lead developer, dealing with all facets of building their SaaS service in Azure, but still mostly deals with frontend work, in which position he started the migration project to NativeScript.",
+      "image": "bart-van-den-burg"
+    },
+    {
+      "id": 3,
+      "name": "Raymond Camden",
+      "title": "Developer Experience Engineer",
+      "bio": "Raymond Camden works as a Developer Experience engineer. He works on serverless, JavaScript, web standards, and enterprise cat demos. He is the author of multiple books on web development and has been actively blogging and presenting for almost twenty years.",
+      "image": "raymond-camden"
+    },
+    {
+      "id": 4,
+      "name": "Dariusz Kalbarczyk",
+      "title": "Developer Advocate at 7N",
+      "bio": "Progress Developer Expert , NG Poland and JS Poland Conference organizer. Co-founder of the group Angular Warsaw, Angular Krakow and GDG Warsaw. Skilled programmer with over 17 years of IT industry experience. Emerging technologies and social media enthusiast. He’s also spent years working closely with some of the biggest companies on the financial and telecommunication markets. While working with AngularJS / Angular for the past 6 years, he participated in the creation of a cutting edge banking transaction system designed for mobile platforms, and a group insurance support system, among others.",
+      "image": "dariusz-kalbarczyk"
+    },
+    {
+      "id": 5,
+      "name": "Rob Lauer",
+      "title": "DevRel Manager at Progress",
+      "bio": "Rob Lauer is Senior Manager of Developer Relations at Progress and has a passion for mobile app development and the open web. With a background in .NET development and a current love for app dev with NativeScript, Rob is a jack-of-all trades, and master of none ¯_(ツ)_/¯.",
+      "image": "rob-lauer"
+    },
+    {
+      "id": 6,
+      "name": "Sherry List",
+      "title": "Developer Advocate at Microsoft",
+      "bio": "For the past 15 years, Sherry has worked with a variety of web technologies and is currently focused on Angular. She lives in beautiful Copenhagen, where she works as a front-end lead developer at Nordea bank. Apart from her everyday job, she is a co-organizer of the ngVikings conference, as well as some Meetups groups, such as ngCopenhagen and GDG Copenhagen. She loves animals and supports various non-profit animal protection organizations.",
+      "image": "sherry-list"
+    },
+    {
+      "id": 7,
+      "name": "Jen Looper",
+      "title": "Developer Advocate at Progress",
+      "bio": "Jen Looper is a Boston-based web and mobile developer and developer advocate at Progress specializing in cross-platform educational and fitness apps for iOS, Android, Kindle and more.",
+      "image": "jen-looper"
+    },
+    {
+      "id": 8,
+      "name": "Shiva Prasad",
+      "title": "Software Consultant at nStudio.io",
+      "bio": "hiva Prasad is a Bengaluru-based polyglot developer, a blogger and a software consultant. He currently works as a Lead Software Developer at Bfit Technologies, Partner at nStudio.io and he is also a mentor for NativeScript Ambassadors. He has developed several plugins and demos for NativeScript community. He is a Machine Learning enthusiast and an Angular Evangelist. He’s always up for sharing knowledge and learning from other developers. He is also a speed cuber.",
+      "image": "shiva-prasad"
+    },
+    {
+      "id": 9,
+      "name": "Igor Randjelovic",
+      "title": "Creator of NativeScript-Vue",
+      "bio": "Igor is passionate about building life-changing applications and he is the genius behind the NATIVESCRIPT+VUE integration. You won’t find any spaghetti around his work as he’s particular about having a clean plate on the table. Whether it’s simple or complex, Igor can handle it from a-z.",
+      "image": "igor-randjelovic"
+    },
+    {
+      "id": 10,
+      "name": "Emil Tabakov",
+      "title": "NativeScript Product Manager at Progress",
+      "bio": "Emil Tabakov is a NativeScript Product Manager at Progress. His manias are snowboarding, SUPing, playing music and of course building stuff with NativeScript.",
+      "image": "emil-tabakov"
+    },
+    {
+      "id": 11,
+      "name": "Alexander Vakrilov",
+      "title": "Team Lead at Progress",
+      "bio": "Alex is the Team Lead of the NativeScript Core team. He is a core NativeScript contributor and a music enthusiast. He loves talking about coding, so he also co-organizes the Angular Sofia meetup. He believes that after a whole day of writing dirty hacks - you should at least spend the evening with fellow coders, talking about pure functions.",
+      "image": "alexander-vakrilov"
+    },
+    {
+      "id": 12,
+      "name": "Natalia Venditto",
+      "title": "Senior Frontend Developer at Netcentric",
+      "bio": "With over 20 years of experience in the web design and development industries, Natalia works as an Enterprise Scale Platforms Frontend Tech Lead with a strong focus in Solutions Architecture and Performance, bringing to life high-traffic and high-performance web and mobile applications for large clients across the world.",
+      "image": "natalia-venditto"
+    },
+    {
+      "id": 13,
+      "name": "Eddy Verbruggen",
+      "title": "The Plugin Master",
+      "bio": "Eddy has worked with Progress for many years. First raising the bar for Cordova plugin quality through the Verified Plugins Marketplace, and now focusing on creating and maintaining NativeScript plugins.",
+      "image": "eddy-verbruggen"
+    },
+    {
+      "id": 14,
+      "name": "Stanimira Vlaeva",
+      "title": "Software Engineer at Progress",
+      "bio": "Stanimira is a software engineer on the NativeScript core team focused on the the integration with Angular and performance optimizations. Lately, she’s been working on providing an official way for sharing code between web and mobile Angular via NativeScript schematics and webpack.",
+      "image": "stanimira-vlaeva"
+    },
+    {
+      "id": 15,
+      "name": "Sebastian Witalec",
+      "title": "Developer Advocate at Progress",
+      "bio": "Sebastian Witalec is a Senior Developer Advocate for Progress who specialises in Angular and NativeScript. He loves working on both serious and fun projects and one day he will use his robot army to conquer the world. He is always happy to learn about the new stuff and to pass the knowledge as far as his voice (or the wire) can take him. Sebastian is based in London actively working with various Dev communities in Europe. When not acting techie he is a massive football fan/player (probably bigger at heart than skills).",
+      "image": "sebastian-witalec"
+    },
+    {
+      "id": 16,
+      "name": "Alex Ziskind",
+      "title": "NativeScript trainer at NativeScripting",
+      "bio": "Alex is a NativeScript Developer Expert and owner of a Washington DC based software firm, Nuvious, since 2010. He is also a partner with nStudio where he mentors budding NativeScript developers. Alex also really loves to spread knowledge by teaching and training teams of developers, whether it’s in person on through video courses on NativeScripting.com.",
+      "image": "alex-ziskind"
+    },
+    {
+      "id": 17,
+      "name": "Rowdy Rabouw",
+      "title": "Senior Engineer at Nationale-Nederlanden",
+      "bio": "Rowdy Rabouw works at Dutch insurance company Nationale-Nederlanden since 1992. He is also a freelance web and app developer and Progress Developer Expert for NativeScript.",
+      "image": "rowdy-rabouw"
+    }
+  ]
+}
