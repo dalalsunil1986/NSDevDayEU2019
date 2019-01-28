@@ -9,7 +9,7 @@ export class SpeakerService {
   private _speakers: Array<Speaker> = [];
 
   constructor() {
-    let dataJson = require("./../data/speakers.json");
+    let dataJson = require("./../data/data.json");
     // JSON.parse(dataJson);
     // this._speakers = JSON.parse(dataJson).speakers;
     this._speakers = dataJson.speakers;

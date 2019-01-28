@@ -33,14 +33,4 @@ export class SpeakersComponent implements OnInit, AfterViewInit {
       carousel.selectedPage = speakerIndex;
     }, 500);
   }
-
-  onTap() {}
-
-  onNavItemTap(navItemRoute: string) {
-    this.routerExtensions.navigate([navItemRoute], {
-      transition: {
-        name: "fade"
-      }
-    });
-  }
 }

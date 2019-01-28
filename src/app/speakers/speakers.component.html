@@ -1,7 +1,6 @@
 <DockLayout class="page">
   <label dock="top" text="Speakers" class="header"></label>
   <FlexboxLayout dock="bottom" class="footer"><ns-menu></ns-menu></FlexboxLayout>
-
   <GridLayout dock="left" rows="auto">
     <Carousel
       #carousel
@@ -13,7 +12,6 @@
       indicatorColorUnselected="rgb(0,0,0)"
       ios:finite="true"
     >
-      <!-- Slides -->
       <CarouselItem class="carousel-item" *ngFor="let speaker of speakers">
         <GridLayout rows="auto *">
           <StackLayout row="0" class="carousel-imagewrapper carousel-1" verticalAlignment="bottom">
@@ -26,7 +24,6 @@
           </StackLayout>
         </GridLayout>
       </CarouselItem>
-      <!-- Slides -->
     </Carousel>
   </GridLayout>
 </DockLayout>
