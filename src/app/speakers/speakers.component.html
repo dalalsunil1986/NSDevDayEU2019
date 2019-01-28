@@ -1,19 +1,10 @@
 <DockLayout class="page">
   <label dock="top" text="Speakers" class="header"></label>
-  <FlexboxLayout dock="bottom" class="footer">
-    <!-- <StackLayout (tap)="showData()"><Label class="fa nav-item nav-schedule" text="&#xf073;" textWrap="true"></Label></StackLayout>
-    <StackLayout (tap)="showWorkshops()"><Label class="fa nav-item nav-workshops" text="&#xf19d;" textWrap="true"></Label></StackLayout>
-    <StackLayout (tap)="showData()"><Label class="fa nav-item nav-speakers" text="&#xf086;" textWrap="true"></Label></StackLayout>
-    <StackLayout (tap)="showData()"><Label class="fa nav-item nav-location" text="&#xf041;" textWrap="true"></Label></StackLayout> -->
-    <FAB (tap)="onNavItemTap('/home')" icon="~/images/home.png" rippleColor="#f1f1f1" class="fab-button"></FAB>
-    <FAB (tap)="fabTap()" icon="~/images/schedule.png" rippleColor="#f1f1f1" class="fab-button"></FAB>
-    <FAB (tap)="fabTap()" icon="~/images/workshops.png" rippleColor="#f1f1f1" class="fab-button"></FAB>
-    <FAB (tap)="fabTap()" icon="~/images/speakers.png" rippleColor="#f1f1f1" class="fab-button"></FAB>
-    <FAB (tap)="fabTap()" icon="~/images/location.png" rippleColor="#f1f1f1" class="fab-button"></FAB>
-  </FlexboxLayout>
+  <FlexboxLayout dock="bottom" class="footer"><ns-menu></ns-menu></FlexboxLayout>
 
   <GridLayout dock="left" rows="auto">
     <Carousel
+      #carousel
       class="carousel"
       row="0"
       height="98%"
@@ -23,34 +14,18 @@
       ios:finite="true"
     >
       <!-- Slides -->
-      <CarouselItem class="carousel-item">
+      <CarouselItem class="carousel-item" *ngFor="let speaker of speakers">
         <GridLayout rows="auto *">
           <StackLayout row="0" class="carousel-imagewrapper carousel-1" verticalAlignment="bottom">
-            <Image src="~/images/tiago-reis-alves.jpg" class="carousel-image" verticalAlignment="bottom" horizontalAlignment="center"></Image>
+            <Image src="~/images/{{ speaker.image }}.jpg" class="carousel-image" verticalAlignment="bottom" horizontalAlignment="center"></Image>
           </StackLayout>
           <StackLayout row="1" class="carousel-content">
-            <Label text="Tiago Reis Alves" textWrap="true" class="text-header"></Label>
-            <Label text="Mobile Developer at irc.com" textWrap="true" class="text-italic"></Label>
-            <Label
-              text="In his decade as a developer, Tiago did a bit of everything until finally landing in the soft arms of Vue.js. He is very excited with the possibility of using Vue with NativeScript and so he has been helping with the nativescript-vue community effort for some time."
-              textWrap="true"
-              class="bio"
-            ></Label>
+            <Label [text]="speaker.name" textWrap="true" class="text-header"></Label>
+            <Label [text]="speaker.title" textWrap="true" class="text-italic"></Label>
+            <Label [text]="speaker.bio" textWrap="true" class="bio"></Label>
           </StackLayout>
         </GridLayout>
       </CarouselItem>
-      <CarouselItem class="carousel-item">
-        <GridLayout rows="auto auto">
-          <StackLayout row="0" class="carousel-imagewrapper carousel-1" verticalAlignment="bottom">
-            <Image src="~/images/bart-van-den-burg.jpg" class="carousel-image" verticalAlignment="bottom" horizontalAlignment="center"></Image>
-          </StackLayout>
-          <StackLayout row="1" class="carousel-content">
-            <Label text="Bart van den Burg" textWrap="true" class="text-header"></Label>
-            <Label text="Lead Developer at Neocles" textWrap="true" class="text-italic"></Label>
-          </StackLayout>
-        </GridLayout>
-      </CarouselItem>
-
       <!-- Slides -->
     </Carousel>
   </GridLayout>
