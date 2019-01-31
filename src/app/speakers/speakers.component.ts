@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild, AfterViewInit } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
 import { Page } from "ui/page";
 
@@ -15,8 +15,7 @@ import { SpeakerService } from "./../services/speaker.service";
   templateUrl: "./speakers.component.html",
   styleUrls: ["./speakers.component.scss"]
 })
-export class SpeakersComponent implements OnInit, AfterViewInit {
-  @ViewChild("carousel") carouselRef: ElementRef;
+export class SpeakersComponent implements OnInit {
   speakers: Array<Speaker> = [];
 
   constructor(private page: Page, private routerExtensions: RouterExtensions, private speakerService: SpeakerService) {}
@@ -24,13 +23,5 @@ export class SpeakersComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.page.actionBarHidden = true;
     this.speakers = this.speakerService.getSpeakers();
-  }
-
-  ngAfterViewInit() {
-    setTimeout(() => {
-      const carousel = this.carouselRef.nativeElement;
-      const speakerIndex = this.speakers.findIndex(obj => obj.id == 17);
-      carousel.selectedPage = speakerIndex;
-    }, 500);
   }
 }
