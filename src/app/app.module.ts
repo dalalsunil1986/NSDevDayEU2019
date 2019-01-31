@@ -6,12 +6,13 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
 import { SpeakerService } from "./services/speaker.service";
+import { ScheduleService } from "./services/schedule.service";
 
 @NgModule({
   bootstrap: [AppComponent],
   imports: [AppRoutingModule, NativeScriptModule, NativeScriptSvgModule],
   declarations: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [SpeakerService]
+  providers: [SpeakerService, ScheduleService]
 })
 export class AppModule {}
