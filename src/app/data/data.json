@@ -1,4 +1,177 @@
 {
+  "schedule": [
+    {
+      "id": 1,
+      "time": "08:30",
+      "talk": false,
+      "title": "Doors open",
+      "text": "Registration"
+    },
+    {
+      "id": 2,
+      "time": "09:30",
+      "talk": true,
+      "title": "Welcome Keynote",
+      "description": "Come join our keynote speakers as they present engaging material in a compelling way. You’ll be on the edge of your seat at the presentation slides advance one by one. You won’t believe how it ends!",
+      "speaker": 15
+    },
+    {
+      "id": 3,
+      "time": "09:45",
+      "talk": true,
+      "title": "Product Manager's View of NativeScript Roadmap",
+      "description": "If you are betting on NativeScript then this is for sure a must-attend session. Join Emo to learn about the future of NativeScript. You will get a good insight of all the important initiatives, various experiments and collaborations with the community and other frameworks.",
+      "speaker": 10
+    },
+    {
+      "id": 4,
+      "time": "10:00",
+      "talk": true,
+      "title": "Corporate Coolness",
+      "description": "Welcome to Nationale-Nederlanden, one of the largest and most leading financial services providers in the Netherlands. A company with over 170 years of history is moving forward with cool and bleeding edge technologies to find the best solutions for its customers.",
+      "speaker": 17
+    },
+    {
+      "id": 5,
+      "time": "10:15",
+      "talk": true,
+      "title": "Road to Mastering NativeScript UI",
+      "description": "User interface of the application plays a vital role in user engagement, therefore it is important for it to be as performant and fluid as possible. Let’s learn about the dos and don’ts for keeping your UI snappy.",
+      "speaker": 8
+    },
+    {
+      "id": 6,
+      "time": "10:40",
+      "talk": true,
+      "title": "Securing NativeScript Apps",
+      "description": "Many developers either don’t know how to secure their NativeScript apps or don’t even know what it means to have a secure app. What to secure and how to secure it is what this talk is about.",
+      "speaker": 16
+    },
+    {
+      "id": 7,
+      "time": "11:00",
+      "talk": false,
+      "title": "Let's have some coffee",
+      "text": "Break"
+    },
+    {
+      "id": 8,
+      "time": "11:30",
+      "talk": true,
+      "title": "From Vue to NS-Vue",
+      "description": "As a Vue developer, I found working with Vue and NativeScript to be a great combination. But I definitely ran into a few surprises and had to “adjust” my mental model a bit. In this talk I’ll discuss what worked well, and what surprised me, as I began using NativeScript and Vue together.",
+      "speaker": 3
+    },
+    {
+      "id": 9,
+      "time": "11:55",
+      "talk": true,
+      "title": "NativeScript on Fire(base)!",
+      "description": "Let the creator of the NativeScript Firebase plugin guide you through the vast Firebase landscape. You may be surprised by what it can do for your app.",
+      "speaker": 13
+    },
+    {
+      "id": 10,
+      "time": "12:20",
+      "talk": true,
+      "title": "Using Azure Cognitive Services with NativeScript",
+      "description": "A quick dive into Azure Cognitive Services.",
+      "speaker": 6
+    },
+    {
+      "id": 11,
+      "time": "12:45",
+      "talk": true,
+      "title": "Three apps. One codebase. No code?",
+      "description": "Progress is set to release a new product that enables low code development of NativeScript apps for iOS and Android and a web app from the same codebase. Kinvey Studio is the next generation of “high productivity” tooling that lets you drag-and-drop your way to building apps, in a developer-approved manner.",
+      "speaker": 5
+    },
+    {
+      "id": 12,
+      "time": "13:00",
+      "talk": false,
+      "title": "Time for lunch",
+      "text": "Break"
+    },
+    {
+      "id": 13,
+      "time": "14:00",
+      "talk": true,
+      "title": "Fast not furious!",
+      "description": "A deep dive into tooling and setup, architecture, content delivery, and monitoring best practices and patterns, to ensure best performance and enhanced user experience. Get your web and mobile apps to be performant from the get-go!",
+      "speaker": 12
+    },
+    {
+      "id": 14,
+      "time": "14:25",
+      "talk": true,
+      "title": "KiwiIRC mobile app. A lov(u)e story.",
+      "description": "I will go through the process of building a mobile version of the Kiwi IRC web client and will cover the vision, challenges, code sharing strategy and solving UI problems.",
+      "speaker": 1
+    },
+    {
+      "id": 15,
+      "time": "14:50",
+      "talk": true,
+      "title": "Talk Title: coming soon",
+      "description": "More information coming soon!",
+      "speaker": 4
+    },
+    {
+      "id": 16,
+      "time": "15:15",
+      "talk": true,
+      "title": "Zen and The Art of Vue.js",
+      "description": "In this talk I’ll explore ways in which the familiar patterns of Vue development translate to some aspects of traditional Chinese brush painting, going on a romp through one of the oldest continuous artistic traditions in the world and seeing how some of its tenets can inspire us, as developers, and inform the way we write our code.",
+      "speaker": 7
+    },
+    {
+      "id": 17,
+      "time": "15:30",
+      "talk": false,
+      "title": "Get some refreshments",
+      "text": "Break"
+    },
+    {
+      "id": 18,
+      "time": "16:00",
+      "talk": true,
+      "title": "Embedding V8 in the Real World",
+      "description": "V8 is the JavaScript engine powering Google Chrome, Node.js, and NativeScript. Learn what challenges the NativeScript team faced embedding V8 in a mobile framework and how you can use the power any C++ based application with one of the most sophisticated JavaScript engines.",
+      "speaker": 14
+    },
+    {
+      "id": 19,
+      "time": "16:25",
+      "talk": true,
+      "title": "Talk Title: coming soon",
+      "description": "More information coming soon!",
+      "speaker": 9
+    },
+    {
+      "id": 20,
+      "time": "16:50",
+      "talk": true,
+      "title": "Build Once Deploy to Many",
+      "description": "Neocles adopted a build-once, deploy-many strategy. This allowed us to develop an app from a single code base and deliver it to four of our global customers in 24(!) distinct apps (including three environments for iOS and Android for each customer). I will talk about how we did this and will go in-depth on some of the bigger learnings we had through the process.",
+      "speaker": 2
+    },
+    {
+      "id": 21,
+      "time": "17:15",
+      "talk": true,
+      "title": "Application State Management for NativeScript Apps",
+      "description": "Let’s discuss what application state actually consists of, and go trough different state-management approaches you can use for your mobile app.",
+      "speaker": 11
+    },
+    {
+      "id": 22,
+      "time": "17:30",
+      "talk": false,
+      "title": "Hope you enjoyed the day",
+      "text": "Drinks"
+    }
+  ],
   "speakers": [
     {
       "id": 1,
