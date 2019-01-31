@@ -1,21 +1,21 @@
 import { Injectable } from "@angular/core";
 import { Speaker } from "./../models/speaker.model";
-import { getString } from "application-settings";
+// import { getString } from "application-settings";
 
 declare var Promise: any;
 
 @Injectable()
 export class SpeakerService {
-  private _speakers: Array<Speaker> = [];
+  private speakers: Array<Speaker> = [];
 
   constructor() {
     let dataJson = require("./../data/data.json");
     // JSON.parse(dataJson);
     // this._speakers = JSON.parse(dataJson).speakers;
-    this._speakers = dataJson.speakers;
+    this.speakers = dataJson.speakers;
   }
 
-  private _dynamicSort(property) {
+  private dynamicSort(property) {
     var sortOrder = 1;
     if (property[0] === "-") {
       sortOrder = -1;
@@ -28,7 +28,16 @@ export class SpeakerService {
   }
 
   getSpeakers(): Speaker[] {
-    this._speakers.sort(this._dynamicSort("name"));
-    return this._speakers;
+    this.speakers.sort(this.dynamicSort("name"));
+    return this.speakers;
+  }
+
+  getSpeakerById(id: number): Speaker {
+    if (!id) {
+      return;
+    }
+    return this.speakers.filter(speaker => {
+      return speaker.id === id;
+    })[0];
   }
 }
