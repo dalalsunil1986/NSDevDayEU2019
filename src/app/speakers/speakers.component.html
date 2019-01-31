@@ -14,7 +14,7 @@
     >
       <CarouselItem class="carousel-item" *ngFor="let speaker of speakers">
         <GridLayout rows="auto *">
-          <StackLayout row="0" class="carousel-imagewrapper carousel-1" verticalAlignment="bottom">
+          <StackLayout row="0" class="carousel-imagewrapper" verticalAlignment="bottom">
             <Image src="~/images/{{ speaker.image }}.jpg" class="carousel-image" verticalAlignment="bottom" horizontalAlignment="center"></Image>
           </StackLayout>
           <StackLayout row="1" class="carousel-content">
