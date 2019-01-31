@@ -1,21 +1,22 @@
 import { Injectable } from "@angular/core";
-import { Speaker } from "./../models/speaker.model";
-import { getString } from "application-settings";
+// import { Schedule } from "./../models/schedule.model";
+// import { getString } from "application-settings";
 
 declare var Promise: any;
 
 @Injectable()
-export class SpeakerService {
-  private _speakers: Array<Speaker> = [];
+export class ScheduleService {
+  // private schedule: Array<Schedule> = [];
+  private schedule = [];
 
   constructor() {
     let dataJson = require("./../data/data.json");
     // JSON.parse(dataJson);
     // this._speakers = JSON.parse(dataJson).speakers;
-    this._speakers = dataJson.speakers;
+    this.schedule = dataJson.schedule;
   }
 
-  private _dynamicSort(property) {
+  private dynamicSort(property) {
     var sortOrder = 1;
     if (property[0] === "-") {
       sortOrder = -1;
@@ -27,8 +28,9 @@ export class SpeakerService {
     };
   }
 
-  getSpeakers(): Speaker[] {
-    this._speakers.sort(this._dynamicSort("name"));
-    return this._speakers;
+  // getSchedule(): Schedule[] {
+  getSchedule() {
+    this.schedule.sort(this.dynamicSort("time"));
+    return this.schedule;
   }
 }
