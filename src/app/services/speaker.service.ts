@@ -1,18 +1,14 @@
 import { Injectable } from "@angular/core";
 import { Speaker } from "./../models/speaker.model";
-// import { getString } from "application-settings";
-
-declare var Promise: any;
+import { getString } from "application-settings";
 
 @Injectable()
 export class SpeakerService {
   private speakers: Array<Speaker> = [];
 
   constructor() {
-    let dataJson = require("./../data/data.json");
-    // JSON.parse(dataJson);
-    // this._speakers = JSON.parse(dataJson).speakers;
-    this.speakers = dataJson.speakers;
+    let dataJson = getString("dataJson");
+    this.speakers = JSON.parse(dataJson).speakers;
   }
 
   private dynamicSort(property) {

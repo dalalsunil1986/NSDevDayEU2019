@@ -15,5 +15,10 @@
   "prettier.printWidth": 150,
   "editor.formatOnSave": true,
   "editor.fontSize": 14,
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#E8333A",
+    "titleBar.activeBackground": "#E8333A",
+    "statusBar.background": "#E8333A"
+  }
 }

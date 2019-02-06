@@ -3,10 +3,10 @@
 <GridLayout rows="*" columns="*" class="page">
   <StackLayout row="0" col="0" class="animate">
     <SVGImage src="~/images/ns-dev-day-logo.svg" class="logo"></SVGImage>
-    <Label text="11-12 April 2019, Amsterdam" textWrap="true" class="date"></Label>
-    <Label text="Schedule" textWrap="true" class="link schedule"></Label>
-    <Label text="Workshops" textWrap="true" class="link workshops"></Label>
+    <Label text="12 April 2019, Amsterdam" textWrap="true" class="date"></Label>
+    <Label text="Schedule" textWrap="true" (tap)="onNavItemTap('/schedule')" class="link schedule"></Label>
     <Label text="Speakers" textWrap="true" (tap)="onNavItemTap('/speakers')" class="link speakers"></Label>
     <Label text="Location" textWrap="true" class="link location"></Label>
+    <Label text="About" textWrap="true" class="link about"></Label>
   </StackLayout>
 </GridLayout>

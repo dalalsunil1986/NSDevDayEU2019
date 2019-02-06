@@ -1,14 +1,13 @@
 import { Component, OnInit } from "@angular/core";
 import { Page } from "ui/page";
 
-import { isAndroid, isIOS, device, screen } from "tns-core-modules/platform";
+import { screen } from "tns-core-modules/platform";
 
-// import { Schedule } from "./../models/schedule.model";
+import { Schedule } from "./../models/schedule.model";
 import { Speaker } from "./../models/speaker.model";
 
 import { ScheduleService } from "./../services/schedule.service";
 import { SpeakerService } from "./../services/speaker.service";
-import { initNgModule } from "@angular/core/src/view/ng_module";
 
 @Component({
   moduleId: module.id,
@@ -17,8 +16,7 @@ import { initNgModule } from "@angular/core/src/view/ng_module";
   styleUrls: ["./schedule.component.scss"]
 })
 export class ScheduleComponent implements OnInit {
-  // schedule: Array<Schedule> = [];
-  schedule: any = [];
+  schedule: Array<Schedule> = [];
   speakers: Array<Speaker> = [];
   dialogOpen: boolean = false;
   selectedId: number = 1;

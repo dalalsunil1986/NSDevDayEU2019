@@ -1,19 +1,14 @@
 import { Injectable } from "@angular/core";
-// import { Schedule } from "./../models/schedule.model";
-// import { getString } from "application-settings";
-
-declare var Promise: any;
+import { Schedule } from "./../models/schedule.model";
+import { getString } from "application-settings";
 
 @Injectable()
 export class ScheduleService {
-  // private schedule: Array<Schedule> = [];
-  private schedule = [];
+  private schedule: Array<Schedule> = [];
 
   constructor() {
-    let dataJson = require("./../data/data.json");
-    // JSON.parse(dataJson);
-    // this._speakers = JSON.parse(dataJson).speakers;
-    this.schedule = dataJson.schedule;
+    let dataJson = getString("dataJson");
+    this.schedule = JSON.parse(dataJson).schedule;
   }
 
   private dynamicSort(property) {
@@ -28,8 +23,7 @@ export class ScheduleService {
     };
   }
 
-  // getSchedule(): Schedule[] {
-  getSchedule() {
+  getSchedule(): Schedule[] {
     this.schedule.sort(this.dynamicSort("time"));
     return this.schedule;
   }
