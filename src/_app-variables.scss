@@ -1,11 +1,13 @@
 $black: rgb(0, 0, 0);
-$blackdark: rgb(44, 62, 80);
+$black-medium: rgb(40, 40, 40);
 $white: rgb(255, 255, 255);
-$yellow: rgb(253, 242, 81);
+// $yellow: rgb(253, 242, 81);
+$yellow: rgb(243, 200, 72);
 $orange: rgb(240, 144, 53);
 $blue: rgb(82, 182, 249);
-$green: rgb(153, 196, 85);
+$green: rgb(152, 184, 96);
 
+$home: $white;
 $schedule: $yellow;
 $speakers: $orange;
 $location: $blue;

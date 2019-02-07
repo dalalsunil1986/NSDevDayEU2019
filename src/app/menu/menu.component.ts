@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild, AfterViewInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
 import { registerElement } from "nativescript-angular/element-registry";
 
@@ -10,8 +10,22 @@ registerElement("Fab", () => require("nativescript-floatingactionbutton").Fab);
   templateUrl: "./menu.component.html",
   styleUrls: ["./menu.component.scss"]
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit {
+  @Input() active: string;
+  scheduleActive: string;
+  speakersActive: string;
+  locationActive: string;
+  aboutActive: string;
+
   constructor(private routerExtensions: RouterExtensions) {}
+
+  ngOnInit() {
+    console.log("active", this.active);
+    this.scheduleActive = this.active === "schedule" ? "-active" : "";
+    this.speakersActive = this.active === "speakers" ? "-active" : "";
+    this.locationActive = this.active === "location" ? "-active" : "";
+    this.aboutActive = this.active === "about" ? "-active" : "";
+  }
 
   onNavItemTap(navItemRoute: string) {
     this.routerExtensions.navigate([navItemRoute], {

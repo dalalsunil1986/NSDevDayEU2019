@@ -16,11 +16,13 @@ import { SpeakerService } from "./../services/speaker.service";
   styleUrls: ["./speakers.component.scss"]
 })
 export class SpeakersComponent implements OnInit {
+  active: string;
   speakers: Array<Speaker> = [];
 
   constructor(private page: Page, private routerExtensions: RouterExtensions, private speakerService: SpeakerService) {}
 
   ngOnInit() {
+    this.active = "speakers";
     this.page.actionBarHidden = true;
     this.speakers = this.speakerService.getSpeakers();
   }

@@ -1,12 +1,15 @@
 <ActionBar></ActionBar>
 
 <GridLayout rows="*" columns="*" class="page">
-  <StackLayout row="0" col="0" class="animate">
-    <SVGImage src="~/images/ns-dev-day-logo.svg" class="logo"></SVGImage>
-    <Label text="12 April 2019, Amsterdam" textWrap="true" class="date"></Label>
-    <Label text="Schedule" textWrap="true" (tap)="onNavItemTap('/schedule')" class="link schedule"></Label>
-    <Label text="Speakers" textWrap="true" (tap)="onNavItemTap('/speakers')" class="link speakers"></Label>
-    <Label text="Location" textWrap="true" class="link location"></Label>
-    <Label text="About" textWrap="true" class="link about"></Label>
-  </StackLayout>
+  <ScrollView>
+    <StackLayout row="0" col="0" class="animate">
+      <SVGImage src="~/images/ns-dev-day-eu-logo.svg" class="logo"></SVGImage>
+      <Label text="NativeScript Developer Day EU" textWrap="true" class="header drop drop-1"></Label>
+      <Label text="12 April 2019, Amsterdam" textWrap="true" class="date drop drop-2"></Label>
+      <Label text="Schedule" textWrap="true" (tap)="onNavItemTap('/schedule')" class="link schedule drop drop-3"></Label>
+      <Label text="Speakers" textWrap="true" (tap)="onNavItemTap('/speakers')" class="link speakers drop drop-4"></Label>
+      <Label text="Location" textWrap="true" (tap)="onNavItemTap('/location')" class="link location drop drop-5"></Label>
+      <Label text="About" textWrap="true" (tap)="onNavItemTap('/about')" class="link about drop drop-6"></Label>
+    </StackLayout>
+  </ScrollView>
 </GridLayout>

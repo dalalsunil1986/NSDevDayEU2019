@@ -1,5 +1,33 @@
-<FAB (tap)="onNavItemTap('/home')" icon="~/images/home.png" rippleColor="#f1f1f1" class="fab-button"></FAB>
-<FAB (tap)="onNavItemTap('/schedule')" icon="~/images/schedule.png" rippleColor="#f1f1f1" class="fab-button"></FAB>
-<FAB (tap)="onNavItemTap('/speakers')" icon="~/images/speakers.png" rippleColor="#f1f1f1" class="fab-button"></FAB>
-<FAB (tap)="onNavItemTap('/location')" icon="~/images/location.png" rippleColor="#f1f1f1" class="fab-button"></FAB>
-<FAB (tap)="onNavItemTap('/about')" icon="~/images/about.png" rippleColor="#f1f1f1" class="fab-button"></FAB>
+<FAB (tap)="onNavItemTap('/home')" icon="~/images/home.png" rippleColor="#f1f1f1" class="fab-button fab-button-home"></FAB>
+
+<FAB
+  (tap)="onNavItemTap('/schedule')"
+  icon="~/images/schedule{{ scheduleActive }}.png"
+  [ngClass]="{ 'fab-button-schedule-active': active === 'schedule' }"
+  rippleColor="#f1f1f1"
+  class="fab-button fab-button-schedule"
+></FAB>
+
+<FAB
+  (tap)="onNavItemTap('/speakers')"
+  icon="~/images/speakers{{ speakersActive }}.png"
+  [ngClass]="{ 'fab-button-speakers-active': active === 'speakers' }"
+  rippleColor="#f1f1f1"
+  class="fab-button fab-button-speakers"
+></FAB>
+
+<FAB
+  (tap)="onNavItemTap('/location')"
+  icon="~/images/location{{ locationActive }}.png"
+  [ngClass]="{ 'fab-button-location-active': active === 'location' }"
+  rippleColor="#f1f1f1"
+  class="fab-button fab-button-location"
+></FAB>
+
+<FAB
+  (tap)="onNavItemTap('/about')"
+  icon="~/images/about{{ aboutActive }}.png"
+  [ngClass]="{ 'fab-button-about-active': active === 'about' }"
+  rippleColor="#f1f1f1"
+  class="fab-button fab-button-about"
+></FAB>

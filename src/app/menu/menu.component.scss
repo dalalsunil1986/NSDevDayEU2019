@@ -14,5 +14,32 @@
 .fab-button {
   height: 55;
   width: 55;
-  background-color: $black;
+  background-color: $white;
+}
+
+.fab-button-home {
+  background-color: $home;
+}
+
+.fab-button-schedule {
+  background-color: $schedule;
+}
+
+.fab-button-speakers {
+  background-color: $speakers;
+}
+
+.fab-button-location {
+  background-color: $location;
+}
+
+.fab-button-about {
+  background-color: $about;
+}
+
+.fab-button-schedule-active,
+.fab-button-speakers-active,
+.fab-button-location-active,
+.fab-button-about-active {
+  background-color: $black-medium;
 }

@@ -10,12 +10,13 @@ import { AppComponent } from "./app.component";
 
 import { SpeakerService } from "./services/speaker.service";
 import { ScheduleService } from "./services/schedule.service";
+import { AboutService } from "./services/about.service";
 
 @NgModule({
   bootstrap: [AppComponent],
   imports: [AppRoutingModule, HttpClientModule, NativeScriptModule, NativeScriptHttpClientModule, NativeScriptSvgModule],
   declarations: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [SpeakerService, ScheduleService]
+  providers: [SpeakerService, ScheduleService, AboutService]
 })
 export class AppModule {}

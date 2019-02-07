@@ -10,7 +10,7 @@ import { Config } from "./../config";
   moduleId: module.id,
   selector: "ns-home",
   templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.css"]
+  styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit {
   constructor(private http: HttpClient, private page: Page, private routerExtensions: RouterExtensions) {}
@@ -37,10 +37,11 @@ export class HomeComponent implements OnInit {
     let lData = getString("dataJson");
     let lVersion: number = lData !== undefined ? JSON.parse(lData).version : 0;
 
-    if (lData === undefined) {
-      let defaultData = require("./../data/default.json");
-      setString("dataJson", JSON.stringify(defaultData));
-    }
+    // TODO: disable always loading from default.json
+    // if (lData === undefined) {
+    let defaultData = require("./../data/default.json");
+    setString("dataJson", JSON.stringify(defaultData));
+    // }
 
     if (!Config.emulator) {
       this.callApi().subscribe(res => {

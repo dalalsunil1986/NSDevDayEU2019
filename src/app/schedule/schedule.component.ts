@@ -16,6 +16,7 @@ import { SpeakerService } from "./../services/speaker.service";
   styleUrls: ["./schedule.component.scss"]
 })
 export class ScheduleComponent implements OnInit {
+  active: string;
   schedule: Array<Schedule> = [];
   speakers: Array<Speaker> = [];
   dialogOpen: boolean = false;
@@ -24,6 +25,7 @@ export class ScheduleComponent implements OnInit {
   constructor(private page: Page, private scheduleService: ScheduleService, private speakerService: SpeakerService) {}
 
   ngOnInit() {
+    this.active = "schedule";
     this.page.actionBarHidden = true;
     this.schedule = this.scheduleService.getSchedule();
     this.schedule.forEach(scheduleItem => {
