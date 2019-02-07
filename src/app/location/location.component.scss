@@ -1,0 +1,23 @@
+@import "../../app-variables";
+
+.page {
+  background-color: $location;
+}
+
+.text {
+  padding: 0 20 20 20;
+}
+
+.text-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", "Oswald-Bold";
+  font-size: 30;
+}
+
+.text-italic {
+  font-style: italic;
+  text-align: center;
+  font-size: 20;
+  padding: 0 20;
+}
