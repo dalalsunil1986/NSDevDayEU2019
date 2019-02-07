@@ -6,11 +6,12 @@
       #carousel
       class="carousel"
       row="0"
-      height="98%"
+      height="100%"
       android:indicatorAnimation="slide"
       indicatorColor="rgb(255,255,255)"
       indicatorColorUnselected="rgb(0,0,0)"
       ios:finite="true"
+      ios:bounce="false"
     >
       <CarouselItem class="carousel-item" *ngFor="let speaker of speakers">
         <GridLayout rows="auto *">

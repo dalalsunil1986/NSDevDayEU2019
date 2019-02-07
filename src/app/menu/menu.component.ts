@@ -20,7 +20,6 @@ export class MenuComponent implements OnInit {
   constructor(private routerExtensions: RouterExtensions) {}
 
   ngOnInit() {
-    console.log("active", this.active);
     this.scheduleActive = this.active === "schedule" ? "-active" : "";
     this.speakersActive = this.active === "speakers" ? "-active" : "";
     this.locationActive = this.active === "location" ? "-active" : "";

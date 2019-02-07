@@ -2,10 +2,6 @@ import { Component, OnInit } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
 import { Page } from "ui/page";
 
-import { registerElement } from "nativescript-angular/element-registry";
-registerElement("Carousel", () => require("nativescript-carousel").Carousel);
-registerElement("CarouselItem", () => require("nativescript-carousel").CarouselItem);
-
 import { Speaker } from "./../models/speaker.model";
 import { SpeakerService } from "./../services/speaker.service";
 

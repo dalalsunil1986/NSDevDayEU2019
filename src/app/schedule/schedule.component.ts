@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { Page } from "ui/page";
-
 import { screen } from "tns-core-modules/platform";
 
 import { Schedule } from "./../models/schedule.model";
