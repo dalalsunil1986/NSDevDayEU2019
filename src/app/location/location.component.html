@@ -3,6 +3,37 @@
   <ScrollView dock="top">
     <StackLayout>
       <label text="Location" class="header"></label>
+      <Label [text]="intro" textWrap="true" class="text"></Label>
+      <Carousel
+        #carousel
+        row="0"
+        height="100%"
+        android:indicatorAnimation="slide"
+        indicatorColor="rgb(255,255,255)"
+        indicatorColorUnselected="rgb(0,0,0)"
+        ios:finite="true"
+        ios:bounce="false"
+        [width]="calculateWidth()"
+      >
+        <CarouselItem>
+          <Image src="~/images/venue3.jpg" class="carousel-image" verticalAlignment="bottom" horizontalAlignment="center"></Image>
+        </CarouselItem>
+        <CarouselItem>
+          <Image src="~/images/venue2.jpg" class="carousel-image" verticalAlignment="bottom" horizontalAlignment="center"></Image>
+        </CarouselItem>
+        <CarouselItem>
+          <Image src="~/images/venue1.jpg" class="carousel-image" verticalAlignment="bottom" horizontalAlignment="center"></Image>
+        </CarouselItem>
+      </Carousel>
+      <GridLayout columns="3*, *" class="address">
+        <Label [text]="address" textWrap="true" class="text" row="0" col="0"></Label>
+        <Image src="~/images/maps.png" row="0" col="1" verticalAlignment="top" (tap)="openUrl('https://goo.gl/maps/kPRNTbXWHrT2')"></Image>
+      </GridLayout>
+      <Label [text]="parking" textWrap="true" class="text"></Label>
+      <GridLayout columns="3*, *" class="address">
+        <Label [text]="publictransport" textWrap="true" class="text" row="0" col="0"></Label>
+        <Image src="~/images/maps.png" row="0" col="1" verticalAlignment="top" (tap)="openUrl('https://goo.gl/maps/w5kdqsEPeMp')"></Image>
+      </GridLayout>
     </StackLayout>
   </ScrollView>
 </DockLayout>
