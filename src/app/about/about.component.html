@@ -1,0 +1,20 @@
+<DockLayout class="page">
+  <FlexboxLayout dock="bottom" class="footer"><ns-menu [active]="active"></ns-menu></FlexboxLayout>
+  <ScrollView dock="top">
+    <StackLayout>
+      <label text="About" class="header"></label>
+      <Label text="Team" textWrap="true" class="text-header"></Label>
+      <Label [text]="team" textWrap="true" class="text"></Label>
+      <Label text="App + Logo" textWrap="true" class="text-header"></Label>
+      <Label [text]="app" textWrap="true" class="text"></Label>
+      <Label text="Code of Conduct" textWrap="true" class="text-header"></Label>
+      <Label [text]="cocIntro" textWrap="true" class="text"></Label>
+      <Label text="Contact Information" textWrap="true" class="text-italic"></Label>
+      <Label [text]="cocContact" textWrap="true" class="text"></Label>
+      <Label text="The Quick Version" textWrap="true" class="text-italic"></Label>
+      <Label [text]="cocQuick" textWrap="true" class="text"></Label>
+      <Label text="The Less Quick Version" textWrap="true" class="text-italic"></Label>
+      <Label [text]="cocComplete" textWrap="true" class="text"></Label>
+    </StackLayout>
+  </ScrollView>
+</DockLayout>
