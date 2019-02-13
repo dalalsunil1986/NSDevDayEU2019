@@ -1,4 +1,4 @@
 export class Config {
-  static apiUrl = "http://2xr.nl/data.json";
-  static emulator = true;
+  static apiUrl = "https://double-r.nl/data.json";
+  static email = "rowdy@double-r.nl";
 }

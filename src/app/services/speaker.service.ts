@@ -7,8 +7,8 @@ export class SpeakerService {
   private speakers: Array<Speaker> = [];
 
   constructor() {
-    let dataJson = getString("dataJson");
-    this.speakers = JSON.parse(dataJson).speakers;
+    const data = getString("data");
+    this.speakers = JSON.parse(data).speakers;
   }
 
   private dynamicSort(property) {

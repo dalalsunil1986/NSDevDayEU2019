@@ -2,7 +2,7 @@
   <FlexboxLayout dock="bottom" class="footer"><ns-menu [active]="active"></ns-menu></FlexboxLayout>
   <ScrollView dock="top">
     <StackLayout>
-      <label text="About" class="header"></label>
+      <label text="About" class="header" (tap)="onAboutTap()"></label>
       <Label text="Team" textWrap="true" class="text-header"></Label>
       <Label [text]="team" textWrap="true" class="text"></Label>
       <Label text="App + Logo" textWrap="true" class="text-header"></Label>

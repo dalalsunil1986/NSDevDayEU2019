@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Page } from "ui/page";
+import { alert } from "tns-core-modules/ui/dialogs";
 
 import { AboutService } from "./../services/about.service";
 
@@ -17,6 +18,8 @@ export class AboutComponent implements OnInit {
   cocContact: string;
   cocQuick: string;
   cocComplete: string;
+  version: number;
+  showVersionCounter: number = 4; // number of taps to show version  :-)
 
   constructor(private page: Page, private aboutService: AboutService) {}
 
@@ -29,5 +32,18 @@ export class AboutComponent implements OnInit {
     this.cocContact = this.aboutService.getCoc(1);
     this.cocQuick = this.aboutService.getCoc(2);
     this.cocComplete = this.aboutService.getCoc(3);
+    this.version = this.aboutService.getVersion();
+  }
+
+  onAboutTap() {
+    this.showVersionCounter--;
+    if (this.showVersionCounter === 0) {
+      const options = {
+        title: "Version",
+        message: this.version.toString(),
+        okButtonText: "OK"
+      };
+      alert(options).then(() => {});
+    }
   }
 }

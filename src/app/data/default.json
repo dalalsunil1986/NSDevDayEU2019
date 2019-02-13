@@ -1,5 +1,5 @@
 {
-  "version": 20190201,
+  "version": 20190211,
   "schedule": [
     {
       "id": 1,
@@ -12,24 +12,24 @@
       "id": 2,
       "time": "09:30",
       "talk": true,
-      "title": "Welcome Keynote",
-      "description": "Come join our keynote speakers as they present engaging material in a compelling way. You’ll be on the edge of your seat at the presentation slides advance one by one. You won’t believe how it ends!",
+      "title": "Welcome to NativeScript Developer Day!",
+      "description": "Join us for this (brief) keynote as we introduce you to our day full of informative NativeScript sessions.",
       "speaker": 15
     },
     {
       "id": 3,
       "time": "09:45",
       "talk": true,
-      "title": "Product Manager's View of NativeScript Roadmap",
-      "description": "If you are betting on NativeScript then this is for sure a must-attend session. Join Emo to learn about the future of NativeScript. You will get a good insight of all the important initiatives, various experiments and collaborations with the community and other frameworks.",
+      "title": "A Product Manager's View of NativeScript Roadmap",
+      "description": "We will kick the day with a quick overview of the NativeScript Roadmap. After this talk you will have a clear picture of the scope of the next releases as well as the long-term vision for the product. All of this will come straight from the source, spiced up with the thinking of the engineering team.",
       "speaker": 10
     },
     {
       "id": 4,
       "time": "10:00",
       "talk": true,
-      "title": "Corporate Coolness",
-      "description": "Welcome to Nationale-Nederlanden, one of the largest and most leading financial services providers in the Netherlands. A company with over 170 years of history is moving forward with cool and bleeding edge technologies to find the best solutions for its customers.",
+      "title": "Moving from Proprietary Software to Open Source",
+      "description": "Welcome to Nationale-Nederlanden, one of the largest and leading financial services providers in the Netherlands. We are moving forward with cool and bleeding edge technologies to find the best solutions for its customers. I’ll show you where we were and how we are moving away from proprietary software to more and more Open Source.",
       "speaker": 17
     },
     {
@@ -37,7 +37,7 @@
       "time": "10:15",
       "talk": true,
       "title": "Road to Mastering NativeScript UI",
-      "description": "User interface of the application plays a vital role in user engagement, therefore it is important for it to be as performant and fluid as possible. Let’s learn about the dos and don’ts for keeping your UI snappy.",
+      "description": "The user interface of your application plays a vital role in user engagement. Therefore it is important for it to be as performant and fluid as possible. Let’s learn about the do’s and don’ts for keeping your NativeScript UI snappy!",
       "speaker": 8
     },
     {
@@ -45,7 +45,7 @@
       "time": "10:40",
       "talk": true,
       "title": "Securing NativeScript Apps",
-      "description": "Many developers either don’t know how to secure their NativeScript apps or don’t even know what it means to have a secure app. What to secure and how to secure it is what this talk is about.",
+      "description": "After running a Twitter poll, it’s become clear that many developers either don’t know how to secure their NativeScript apps or don’t even know what it means to have a secure app. What to secure and how to secure it is what this talk is about. I’ll show examples of data protection on the server and client using a number of techniques. I’ll also show how to protect one of the most important assets of an organization: the code itself.",
       "speaker": 16
     },
     {
@@ -59,7 +59,7 @@
       "id": 8,
       "time": "11:30",
       "talk": true,
-      "title": "From Vue to NS-Vue",
+      "title": "From Vue to NativeScript-Vue",
       "description": "As a Vue developer, I found working with Vue and NativeScript to be a great combination. But I definitely ran into a few surprises and had to “adjust” my mental model a bit. In this talk I’ll discuss what worked well, and what surprised me, as I began using NativeScript and Vue together.",
       "speaker": 3
     },
@@ -68,7 +68,7 @@
       "time": "11:55",
       "talk": true,
       "title": "NativeScript on Fire(base)!",
-      "description": "Let the creator of the NativeScript Firebase plugin guide you through the vast Firebase landscape. You may be surprised by what it can do for your app.",
+      "description": "You may know Firebase as a real-time Database-as-a-Service provider, but did you know these days it also offers services like Analytics, AdMob, Push notifications, Cloud Functions, and Machine Learning?\n\nLet me introduce you to the entire Firebase family, from the grumpy old grandpa (Crashlytics) to that cool niece (ML Kit) - and show what they can do for your NativeScript app.",
       "speaker": 13
     },
     {
@@ -84,7 +84,7 @@
       "time": "12:45",
       "talk": true,
       "title": "Three apps. One codebase. No code?",
-      "description": "Progress is set to release a new product that enables low code development of NativeScript apps for iOS and Android and a web app from the same codebase. Kinvey Studio is the next generation of “high productivity” tooling that lets you drag-and-drop your way to building apps, in a developer-approved manner.",
+      "description": "Progress is set to release a new product that enables low code development of NativeScript apps for iOS and Android + a web app from the same codebase. Using tried-and-true code sharing strategies with Angular, and relying on the robust serverless platform of Progress Kinvey, Kinvey Studio is the next generation of 'high productivity' tooling that lets you drag-and-drop your way to building apps, in a developer-approved manner.",
       "speaker": 5
     },
     {
@@ -114,7 +114,7 @@
       "id": 15,
       "time": "14:50",
       "talk": true,
-      "title": "Talk Title: coming soon",
+      "title": "TBD",
       "description": "More information coming soon!",
       "speaker": 4
     },
@@ -145,28 +145,20 @@
       "id": 19,
       "time": "16:25",
       "talk": true,
-      "title": "Talk Title: coming soon",
-      "description": "More information coming soon!",
-      "speaker": 9
-    },
-    {
-      "id": 20,
-      "time": "16:50",
-      "talk": true,
       "title": "Build Once Deploy to Many",
       "description": "Neocles adopted a build-once, deploy-many strategy. This allowed us to develop an app from a single code base and deliver it to four of our global customers in 24(!) distinct apps (including three environments for iOS and Android for each customer). I will talk about how we did this and will go in-depth on some of the bigger learnings we had through the process.",
       "speaker": 2
     },
     {
-      "id": 21,
-      "time": "17:15",
+      "id": 20,
+      "time": "16:50",
       "talk": true,
-      "title": "Application State Management for NativeScript Apps",
-      "description": "Let’s discuss what application state actually consists of, and go trough different state-management approaches you can use for your mobile app.",
+      "title": "State Management for NativeScript Apps",
+      "description": "In this talk we will explore what application state actually is in a mobile application, and some specific approaches that you can use manage it effectively as your app grows. We will also talk about how having a dedicated approach for state management can unlock some hidden gems of developer productivity - like faster HMR and easier debugging!",
       "speaker": 11
     },
     {
-      "id": 22,
+      "id": 21,
       "time": "17:30",
       "talk": false,
       "title": "Hope you enjoyed the day",
@@ -199,7 +191,7 @@
       "id": 4,
       "name": "Dariusz Kalbarczyk",
       "title": "Developer Advocate at 7N",
-      "bio": "Progress Developer Expert , NG Poland and JS Poland Conference organizer. Co-founder of the group Angular Warsaw, Angular Krakow and GDG Warsaw. Skilled programmer with over 17 years of IT industry experience. Emerging technologies and social media enthusiast. He’s also spent years working closely with some of the biggest companies on the financial and telecommunication markets. While working with AngularJS / Angular for the past 6 years, he participated in the creation of a cutting edge banking transaction system designed for mobile platforms, and a group insurance support system, among others.",
+      "bio": "Progress Developer Expert, NG Poland and JS Poland Conference organizer. Spent years working closely with some of the biggest companies on the financial and telecommunication markets. While working with AngularJS / Angular for the past 6 years, he participated in the creation of a cutting edge banking transaction system designed for mobile platforms, and a group insurance support system, among others.",
       "image": "dariusz-kalbarczyk"
     },
     {
@@ -227,15 +219,8 @@
       "id": 8,
       "name": "Shiva Prasad",
       "title": "Software Consultant at nStudio.io",
-      "bio": "hiva Prasad is a Bengaluru-based polyglot developer, a blogger and a software consultant. He currently works as a Lead Software Developer at Bfit Technologies, Partner at nStudio.io and he is also a mentor for NativeScript Ambassadors. He has developed several plugins and demos for NativeScript community. He is a Machine Learning enthusiast and an Angular Evangelist. He’s always up for sharing knowledge and learning from other developers. He is also a speed cuber.",
+      "bio": "Shiva Prasad is a polyglot developer, a blogger and a software consultant. He currently works as a Lead Software Developer at Bfit Technologies, Partner at nStudio.io and he is also a mentor for NativeScript Ambassadors. He has developed several plugins and demos for NativeScript community. He is a Machine Learning enthusiast and an Angular Evangelist. He’s always up for sharing knowledge and learning from other developers.",
       "image": "shiva-prasad"
-    },
-    {
-      "id": 9,
-      "name": "Igor Randjelovic",
-      "title": "Creator of NativeScript-Vue",
-      "bio": "Igor is passionate about building life-changing applications and he is the genius behind the NATIVESCRIPT+VUE integration. You won’t find any spaghetti around his work as he’s particular about having a clean plate on the table. Whether it’s simple or complex, Igor can handle it from a-z.",
-      "image": "igor-randjelovic"
     },
     {
       "id": 10,
@@ -276,7 +261,7 @@
       "id": 15,
       "name": "Sebastian Witalec",
       "title": "Developer Advocate at Progress",
-      "bio": "Sebastian Witalec is a Senior Developer Advocate for Progress who specialises in Angular and NativeScript. He loves working on both serious and fun projects and one day he will use his robot army to conquer the world. He is always happy to learn about the new stuff and to pass the knowledge as far as his voice (or the wire) can take him. Sebastian is based in London actively working with various Dev communities in Europe. When not acting techie he is a massive football fan/player (probably bigger at heart than skills).",
+      "bio": "Sebastian Witalec is a Senior Developer Advocate for Progress who specialises in Angular and NativeScript. He loves working on both serious and fun projects and one day he will use his robot army to conquer the world. He is always happy to learn about the new stuff and to pass the knowledge as far as his voice (or the wire) can take him. Sebastian is based in London actively working with various Dev communities in Europe.",
       "image": "sebastian-witalec"
     },
     {
@@ -290,7 +275,7 @@
       "id": 17,
       "name": "Rowdy Rabouw",
       "title": "Senior Engineer at Nationale-Nederlanden",
-      "bio": "Rowdy Rabouw works at Dutch insurance company Nationale-Nederlanden since 1992. He is also a freelance web and app developer and Progress Developer Expert for NativeScript.",
+      "bio": "Rowdy Rabouw works at Dutch insurance company Nationale-Nederlanden since 1992 and is currently a Senior Engineer on NativeScript and JavaScript projects. He is also a freelance web and app developer and Progress Developer Expert for NativeScript.",
       "image": "rowdy-rabouw"
     }
   ],

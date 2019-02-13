@@ -6,8 +6,8 @@ export class LocationService {
   private location: any;
 
   constructor() {
-    let dataJson = getString("dataJson");
-    this.location = JSON.parse(dataJson).location;
+    const data = getString("data");
+    this.location = JSON.parse(data).location;
   }
 
   getIntro(): string {

@@ -4,10 +4,13 @@ import { getString } from "application-settings";
 @Injectable()
 export class AboutService {
   private about: any;
+  private version: number;
 
   constructor() {
-    let dataJson = getString("dataJson");
-    this.about = JSON.parse(dataJson).about;
+    const data = getString("data");
+    const dataObj = JSON.parse(data);
+    this.about = dataObj.about;
+    this.version = dataObj.version;
   }
 
   getTeam(): string {
@@ -20,5 +23,9 @@ export class AboutService {
 
   getCoc(id): string {
     return this.about.coc[id].text;
+  }
+
+  getVersion(): number {
+    return this.version;
   }
 }

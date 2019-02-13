@@ -7,11 +7,11 @@ export class ScheduleService {
   private schedule: Array<Schedule> = [];
 
   constructor() {
-    let dataJson = getString("dataJson");
-    this.schedule = JSON.parse(dataJson).schedule;
+    const data = getString("data");
+    this.schedule = JSON.parse(data).schedule;
   }
 
-  private dynamicSort(property) {
+  private dynamicSort(property: string) {
     var sortOrder = 1;
     if (property[0] === "-") {
       sortOrder = -1;
