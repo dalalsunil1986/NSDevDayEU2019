@@ -9,7 +9,6 @@
     }
   },
   "description": "NativeScript Developer Day EU 2019",
-  "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "https://github.com/rowdyrabouw/NSDevDayEU2019",
   "scripts": {
     "lint": "tslint \"src/**/*.ts\""
