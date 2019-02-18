@@ -11,7 +11,8 @@
   "description": "NativeScript Developer Day EU 2019",
   "repository": "https://github.com/rowdyrabouw/NSDevDayEU2019",
   "scripts": {
-    "lint": "tslint \"src/**/*.ts\""
+    "lint": "tslint \"src/**/*.ts\"",
+    "ios.build": "tns build ios --bundle --env.aot --env.uglify --release --forDevice"
   },
   "dependencies": {
     "@angular/animations": "~7.1.0",

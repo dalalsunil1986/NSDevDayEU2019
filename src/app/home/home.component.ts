@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
         this.onGetDataSuccess(result);
       },
       error => {
-        // console.log(error);
+        console.log(error);
         const message =
           "\nUnable to retrieve (new) conference data from the server. Maybe an internet connection was unavailable.\n\nYou might not have the latest information.";
         this.showError(message);
@@ -47,22 +47,20 @@ export class HomeComponent implements OnInit {
     );
   }
 
-  private createRequestHeader() {
-    const headers = new HttpHeaders({
-      // AuthKey: "my-key",
-      // AuthToken: "my-token",
-      "Content-Type": "application/json"
-    });
+  private createRequestHeader(version: number) {
+    const headers = new HttpHeaders().set("Content-Type", "application/json").set("appversion", version.toString());
     return headers;
   }
 
   private getData(version: number) {
     // console.log("version", version);
-    const headers = this.createRequestHeader();
+    const headers = this.createRequestHeader(version);
+    // console.log("headers =", headers);
     return this.http.get(Config.apiUrl, { headers: headers, observe: "response" });
   }
 
   private onGetDataSuccess(res) {
+    // console.log("status =", res.status);
     switch (res.status) {
       case 200:
         setString("data", JSON.stringify(res.body));
