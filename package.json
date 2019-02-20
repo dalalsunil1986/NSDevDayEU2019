@@ -12,7 +12,7 @@
   "repository": "https://github.com/rowdyrabouw/NSDevDayEU2019",
   "scripts": {
     "lint": "tslint \"src/**/*.ts\"",
-    "ios.build": "tns build ios --bundle --env.aot --env.uglify --release --forDevice"
+    "ios.build": "tns build ios --bundle"
   },
   "dependencies": {
     "@angular/animations": "~7.1.0",
