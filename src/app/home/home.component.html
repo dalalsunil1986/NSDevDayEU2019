@@ -3,7 +3,12 @@
 <GridLayout rows="*" columns="*" class="page">
   <ScrollView>
     <StackLayout row="0" col="0" class="animate">
-      <SVGImage src="~/images/ns-dev-day-eu-logo.svg" class="logo"></SVGImage>
+      <ios>
+        <SVGImage src="~/images/ns-dev-day-eu-logo.svg" class="logo"></SVGImage>
+      </ios>
+      <android>
+        <Image src="~/images/ns-dev-day-eu-logo.png" class="logo logo-android"></Image>
+      </android>
       <Label text="NativeScript Developer Day EU" textWrap="true" class="header drop drop-1"></Label>
       <Label text="12 April 2019, Amsterdam" textWrap="true" class="date drop drop-2"></Label>
       <Label text="Schedule" textWrap="true" (tap)="onNavItemTap('/schedule')" class="link schedule drop drop-3"></Label>
