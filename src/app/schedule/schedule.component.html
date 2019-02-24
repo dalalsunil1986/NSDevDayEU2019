@@ -3,7 +3,7 @@
     <label dock="top" text="Schedule" class="header"></label>
     <FlexboxLayout dock="bottom" class="footer"><ns-menu [active]="active"></ns-menu></FlexboxLayout>
     <StackLayout dock="left">
-      <ScrollView>
+      <ScrollView height="100%">
         <StackLayout>
           <StackLayout
             *ngFor="let scheduleItem of schedule; let i = index"
