@@ -21,11 +21,15 @@ export class AboutService {
     return this.about.app;
   }
 
-  getCoc(id): string {
+  getCoc(id: number): string {
     return this.about.coc[id].text;
   }
 
   getVersion(): number {
     return this.version;
+  }
+
+  getSponsors() {
+    return this.about.sponsors;
   }
 }

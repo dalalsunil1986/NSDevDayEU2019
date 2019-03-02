@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Page } from "ui/page";
 import { alert } from "tns-core-modules/ui/dialogs";
+import * as Utility from "utils/utils";
 
 import { AboutService } from "./../services/about.service";
 
@@ -20,6 +21,7 @@ export class AboutComponent implements OnInit {
   cocComplete: string;
   version: number;
   showVersionCounter: number = 4; // number of taps to show version  :-)
+  sponsors;
 
   constructor(private page: Page, private aboutService: AboutService) {}
 
@@ -33,6 +35,7 @@ export class AboutComponent implements OnInit {
     this.cocQuick = this.aboutService.getCoc(2);
     this.cocComplete = this.aboutService.getCoc(3);
     this.version = this.aboutService.getVersion();
+    this.sponsors = this.aboutService.getSponsors();
   }
 
   onAboutTap() {
@@ -45,5 +48,9 @@ export class AboutComponent implements OnInit {
       };
       alert(options).then(() => {});
     }
+  }
+
+  openUrl(url: string) {
+    Utility.openUrl(url);
   }
 }

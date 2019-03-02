@@ -7,6 +7,12 @@
       <Label [text]="team" textWrap="true" class="text"></Label>
       <Label text="App + Logo" textWrap="true" class="text-header"></Label>
       <Label [text]="app" textWrap="true" class="text"></Label>
+      <Label text="Sponsors" textWrap="true" class="text-header"></Label>
+      <StackLayout *ngFor="let sponsor of sponsors">
+        <StackLayout class="sponsor-image-wrapper" horizontalAlignment="center" verticalAlignment="middle">
+          <Image class="sponsor-image" [src]="sponsor.image" (tap)="openUrl(sponsor.url)"></Image>
+        </StackLayout>
+      </StackLayout>
       <Label text="Code of Conduct" textWrap="true" class="text-header"></Label>
       <Label [text]="cocIntro" textWrap="true" class="text"></Label>
       <Label text="Contact Information" textWrap="true" class="text-italic"></Label>

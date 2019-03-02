@@ -19,10 +19,15 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.page.actionBarHidden = true;
 
-    // remove("data");
+    if (Config.debug) {
+      console.log("Remove data from Application Settings");
+      remove("data");
+    }
     let data = getString("data");
     let version: number = data !== undefined ? JSON.parse(data).version : 0;
-    // console.log("version", version);
+    if (Config.debug) {
+      console.log("Version from Application Settings (should be 0)", version);
+    }
 
     // retrieve data from file
     if (data === undefined) {
@@ -31,20 +36,24 @@ export class HomeComponent implements OnInit {
       data = getString("data");
       version = JSON.parse(data).version;
     }
-    // console.log("version", version);
+    if (Config.debug) {
+      console.log("Version from default.json", version);
+    }
 
     // retrieve (new) data from server
-    this.getData(version).subscribe(
-      result => {
-        this.onGetDataSuccess(result);
-      },
-      error => {
-        console.log(error);
-        const message =
-          "\nUnable to retrieve (new) conference data from the server. Maybe an internet connection was unavailable.\n\nYou might not have the latest information.";
-        this.showError(message);
-      }
-    );
+    if (!Config.debug) {
+      this.getData(version).subscribe(
+        result => {
+          this.onGetDataSuccess(result);
+        },
+        error => {
+          console.log(error);
+          const message =
+            "\nUnable to retrieve (new) conference data from the server. Maybe an internet connection was unavailable.\n\nYou might not have the latest information.";
+          this.showError(message);
+        }
+      );
+    }
   }
 
   private createRequestHeader(version: number) {
