@@ -7,6 +7,7 @@ import { Speaker } from "./../models/speaker.model";
 
 import { ScheduleService } from "./../services/schedule.service";
 import { SpeakerService } from "./../services/speaker.service";
+import { TouchGestureEventData } from "tns-core-modules/ui/gestures";
 
 @Component({
   moduleId: module.id,
@@ -20,8 +21,9 @@ export class ScheduleComponent implements OnInit {
   speakers: Array<Speaker> = [];
   dialogOpen: boolean = false;
   selectedId: number = 1;
+  selectable: boolean = true;
 
-  constructor(private page: Page, private scheduleService: ScheduleService, private speakerService: SpeakerService) {}
+  constructor(private page: Page, private scheduleService: ScheduleService, private speakerService: SpeakerService) { }
 
   ngOnInit() {
     this.active = "schedule";
@@ -32,9 +34,26 @@ export class ScheduleComponent implements OnInit {
     });
   }
 
+  onScheduleItemTouch(args: TouchGestureEventData, idx: number) {
+    if (args.action === 'down') {
+      this.selectable = true;
+    }
+    else if (args.action === 'up' && this.selectable) {
+      setTimeout(() => {
+        this.showDialog(idx);
+      }, 10);
+      this.selectable = true;
+    }
+  }
+
   showDialog(id: number) {
     this.selectedId = id;
     this.dialogOpen = this.schedule[this.selectedId].talk;
+    this.selectable = true;
+  }
+
+  onScroll() {
+    this.selectable = false;
   }
 
   closeDialog() {
