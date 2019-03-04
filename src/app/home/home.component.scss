@@ -11,8 +11,8 @@
   width: 120;
   height: 120;
   animation-name: rotation;
-  animation-delay: 2s;
-  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   transform: scale(0);
@@ -27,7 +27,7 @@
 }
 
 .drop-1 {
-  animation-delay: 5s;
+  animation-delay: 3s;
   animation-name: drop;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -35,7 +35,7 @@
 }
 
 .drop-2 {
-  animation-delay: 5.5s;
+  animation-delay: 3.5s;
   animation-name: drop;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -43,7 +43,7 @@
 }
 
 .drop-3 {
-  animation-delay: 6s;
+  animation-delay: 4s;
   animation-name: drop;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -51,7 +51,7 @@
 }
 
 .drop-4 {
-  animation-delay: 6.5s;
+  animation-delay: 4.5s;
   animation-name: drop;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -59,7 +59,7 @@
 }
 
 .drop-5 {
-  animation-delay: 7s;
+  animation-delay: 5s;
   animation-name: drop;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -67,7 +67,7 @@
 }
 
 .drop-6 {
-  animation-delay: 7.5s;
+  animation-delay: 5.5s;
   animation-name: drop;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -78,8 +78,7 @@
   background-color: rgba(46, 40, 65, 0.9);
   opacity: 0;
   animation-name: reveal;
-  animation-duration: 4s;
-  animation-delay: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   padding: 20;
 }
