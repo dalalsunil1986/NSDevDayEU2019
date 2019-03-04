@@ -1,31 +1,26 @@
 <StackLayout [class.dialogOpen]="dialogOpen" (tap)="closeDialog()">
   <DockLayout class="page">
     <label dock="top" text="Schedule" class="header"></label>
-    <FlexboxLayout dock="bottom" class="footer"><ns-menu [active]="active"></ns-menu></FlexboxLayout>
+    <FlexboxLayout dock="bottom" class="footer">
+      <ns-menu [active]="active"></ns-menu>
+    </FlexboxLayout>
     <StackLayout dock="left">
-      <ScrollView height="100%">
+      <ScrollView height="100%" (scroll)="onScroll($event)">
         <StackLayout>
-          <StackLayout
-            *ngFor="let scheduleItem of schedule; let i = index"
-            class="schedule-item"
-            [class.schedule-item-talk]="scheduleItem.talk"
-            [class.schedule-item-break]="!scheduleItem.talk"
-            (tap)="showDialog(i)"
-          >
+          <StackLayout *ngFor="let scheduleItem of schedule; let i = index" class="schedule-item"
+            [class.schedule-item-talk]="scheduleItem.talk" [class.schedule-item-break]="!scheduleItem.talk"
+            (touch)="onScheduleItemTouch($event,i)">
             <GridLayout rows="*" columns="auto * auto">
               <Label row="0" col="0" [text]="scheduleItem.time" textWrap="true" class="schedule-time"></Label>
               <StackLayout row="0" col="1" class="schedule-description">
-                <Label [text]="scheduleItem.text" *ngIf="!scheduleItem.talk" class="schedule-speaker" textWrap="true"></Label>
-                <Label [text]="scheduleItem.speakerDetails.name" *ngIf="scheduleItem.talk" class="schedule-speaker" textWrap="true"></Label>
+                <Label [text]="scheduleItem.text" *ngIf="!scheduleItem.talk" class="schedule-speaker"
+                  textWrap="true"></Label>
+                <Label [text]="scheduleItem.speakerDetails.name" *ngIf="scheduleItem.talk" class="schedule-speaker"
+                  textWrap="true"></Label>
                 <Label [text]="scheduleItem.title" class="schedule-title" textWrap="true"></Label>
               </StackLayout>
-              <Image
-                row="0"
-                col="2"
-                src="~/images/{{ scheduleItem.speakerDetails.image }}.jpg"
-                *ngIf="scheduleItem.talk"
-                class="schedule-image"
-              ></Image>
+              <Image row="0" col="2" src="~/images/{{ scheduleItem.speakerDetails.image }}.jpg"
+                *ngIf="scheduleItem.talk" class="schedule-image"></Image>
             </GridLayout>
           </StackLayout>
         </StackLayout>
